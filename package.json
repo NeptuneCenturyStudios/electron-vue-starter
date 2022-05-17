@@ -6,11 +6,10 @@
   "main": "main.js",
   "author": "Eric Butler",
   "license": "MIT",
-  "scripts": {
-    "serve": "vue-cli-service serve",
+  "scripts": {    
     "build": "vue-cli-service build",
     "build-dev": "vue-cli-service build --mode development",
-    "build-watch": "vue-cli-service build --mode development --watch",
+    "watch": "vue-cli-service build --mode development --watch",
     "lint": "vue-cli-service lint",
     "start": "electron ."
   },

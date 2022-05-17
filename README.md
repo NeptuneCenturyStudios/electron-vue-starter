@@ -5,14 +5,19 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and watches files for changes
 ```
-npm run serve
+npm run watch
 ```
 
 ### Compiles and minifies for production
 ```
 npm run build
+```
+
+### Runs Electron app
+```
+npm run start
 ```
 
 ### Lints and fixes files
