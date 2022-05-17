@@ -1,4 +1,4 @@
-# electron-test
+# electron-vue-starter
 
 ## Project setup
 ```
