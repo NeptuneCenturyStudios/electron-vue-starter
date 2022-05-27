@@ -1,5 +1,5 @@
 {
-  "name": "electron-vuetify-starter",
+  "name": "electron-vue-starter",
   "version": "0.1.0",
   "private": false,
   "description": "A starter app to build your own Electron Vue apps.",
