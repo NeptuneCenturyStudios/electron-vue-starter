@@ -3,16 +3,14 @@
   "version": "0.1.0",
   "private": false,
   "description": "A starter app to build your own Electron Vue apps.",
-  "main": "main.js",
   "author": "Eric Butler",
-  "license": "MIT",
-  "scripts": {    
-    "build": "vue-cli-service build",
-    "build-dev": "vue-cli-service build --mode development",
-    "watch": "vue-cli-service build --mode development --watch",
-    "lint": "vue-cli-service lint",
-    "start": "electron ."
+  "scripts": {
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
   },
+  "main": "background.js",
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
@@ -25,9 +23,13 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "electron": "^20.1.2",
+    "electron-builder": "^23.6.0",
+    "electron-devtools-installer": "^3.1.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.51.0",
-    "sass-loader": "^12.6.0"
-  }
+    "sass-loader": "^12.6.0",
+    "vue-cli-plugin-electron-builder": "~2.1.1"
+  },
+  "license": "MIT"
 }
